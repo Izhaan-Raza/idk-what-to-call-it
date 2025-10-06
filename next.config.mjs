@@ -2,8 +2,6 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // --- THIS IS THE CRITICAL PART THAT WAS MISSING ---
-  // Restoring the rewrites function to proxy API calls to your Flask backend.
   async rewrites() {
     return [
       {
@@ -12,25 +10,26 @@ const nextConfig = {
       },
     ]
   },
-  // ----------------------------------------------------
-  
   images: {
     remotePatterns: [
+      // --- THIS IS THE CRUCIAL PART ---
+      // This entry gives Next.js permission to load images directly from your Azure VM.
       {
         protocol: 'http',
-        hostname: '4.240.96.183', // For your uploaded images
+        hostname: '4.240.96.183',
+      },
+      // ------------------------------------
+      {
+        protocol: 'https',
+        hostname: 'i.scdn.co',
       },
       {
         protocol: 'https',
-        hostname: 'i.scdn.co', // For the old Spotify placeholder
+        hostname: 'via.placeholder.com',
       },
       {
         protocol: 'https',
-        hostname: 'via.placeholder.com', // For our fallback placeholder
-      },
-      {
-        protocol: 'https',
-        hostname: 'is1-ssl.mzstatic.com', // For the new iTunes API images
+        hostname: 'is1-ssl.mzstatic.com',
       },
     ],
   },

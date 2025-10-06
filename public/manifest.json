@@ -1,0 +1,16 @@
+{
+  "name": "idk what to name this",
+  "short_name": "Uhhhhhhhh",
+  "description": "Side project.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#220565",
+  "theme_color": "#680577",
+  "icons": [
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -15,8 +15,8 @@ const nextConfig = {
       // --- THIS IS THE CRUCIAL PART ---
       // This entry gives Next.js permission to load images directly from your Azure VM.
       {
-        protocol: 'http',
-        hostname: '4.240.96.183',
+        protocol: 'https',
+        hostname: 'izhaan-backend.fun',
       },
       // ------------------------------------
       {

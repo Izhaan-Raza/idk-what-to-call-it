@@ -35,9 +35,10 @@ export function ImageTileModal({ isOpen, setIsOpen, onTileCreate }: ImageTileMod
       body: formData,
     });
 
+
     if (res.ok) {
       const data = await res.json();
-      onTileCreate({ type: 'image', content: data.url, order: 0 }); // Order set by parent
+      onTileCreate({ type: 'image', content: `${process.env.NEXT_PUBLIC_API_BASE_URL}${data.url}`, order: 0 });
       setIsOpen(false);
       setFile(null);
     }

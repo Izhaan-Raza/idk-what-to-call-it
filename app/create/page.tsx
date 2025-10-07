@@ -51,7 +51,10 @@ export default function CreateEntryPage() {
       });
 
       if (res.ok) {
-        window.location.href = '/';
+        setTitle('');
+        setDescription('');
+        setTiles([]);
+        window.location.href = '/'; // or use router.push('/') for SPA navigation
       } else {
         const data = await res.json();
         setError(data.error || 'Failed to create entry.');

@@ -4,6 +4,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import { AuthProvider } from '@/context/AuthContext'
+import { Analytics } from "@vercel/analytics/next"
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         {/* The AuthProvider and page content now render on a transparent layer above the fixed background. */}
         <AuthProvider>
           {children}
+          <Analytics/>
         </AuthProvider>
         
       </body>

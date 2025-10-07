@@ -15,7 +15,7 @@ function InstallPrompt() {
   return (
     <div className="min-h-screen flex items-center justify-center text-white font-nunito p-8">
       <div className="text-center max-w-md glass-outer p-8">
-        <h1 className="text-4xl font-bold mb-4">Heyylooooooo (please dont judge made this app in like 8 hrs)</h1>
+        <h1 className="text-4xl font-bold mb-4">Heyylooooooo (please dont judge made this app in like (10:43:12) hrs)</h1>
         <p className="text-lg text-gray-300 mb-6">
           To install this app add it to home screen.  
         </p>

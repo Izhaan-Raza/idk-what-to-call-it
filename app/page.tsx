@@ -13,30 +13,54 @@ import { type JournalEntry as JournalEntryType } from "@/lib/types";
 // This is the landing page shown to users in a regular browser.
 function InstallPrompt() {
   return (
-    <div className="min-h-screen flex items-center justify-center text-white font-nunito p-8">
-      <div className="text-center max-w-md glass-outer p-8">
-        <h1 className="text-4xl font-bold mb-4">Auto Generated message due to server error and lack of maintainance.</h1>
-        <p className="text-lg text-gray-300 mb-6">
-          Peak User per day: 83
-          <br>
-          </br>
-          Recurring usser: 12
-          total uptime: 79hrs 15min
-          
-          Thank you for using/caring about this project.
-          Good Night. GG.
-          Successfull projects graveyard count: 11
-
-          ~Izhaan 🤍🤍
+    // Main container to center the content with a dark background
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white font-nunito p-4">
+      {/* The main card with a glassmorphism effect, rounded corners, and shadow */}
+      <div className="w-full max-w-md glass-outer rounded-xl shadow-lg p-8 text-center">
+        
+        <h1 className="text-2xl font-bold mb-2">
+          A Message from the Developer
+        </h1>
+        <p className="text-red-400 mb-6">
+          This service is offline due to a server error and lack of maintenance.
         </p>
-        <div className="text-left space-y-4">
-          
+
+        {/* Statistics list, visually separated */}
+        <div className="border-t border-gray-700 pt-6 mt-6">
+          <ul className="space-y-3 text-left">
+            <li className="flex justify-between items-center text-gray-300">
+              <span>Peak Daily Users</span>
+              <span className="font-semibold text-lg text-white">83</span>
+            </li>
+            <li className="flex justify-between items-center text-gray-300">
+              <span>Recurring Users</span>
+              <span className="font-semibold text-lg text-white">12</span>
+            </li>
+            <li className="flex justify-between items-center text-gray-300">
+              <span>Total Uptime</span>
+              <span className="font-semibold text-lg text-white">79h 15m</span>
+            </li>
+            <li className="flex justify-between items-center text-gray-300">
+              <span>Successful Projects Graveyard</span>
+              <span className="font-semibold text-lg text-white">11</span>
+            </li>
+          </ul>
         </div>
+        
+        {/* Closing remarks and signature */}
+        <p className="mt-8 text-gray-200">
+          Thank you for using and caring about this project.
+        </p>
+        <p className="text-gray-400 text-sm mt-1">
+          Good Night. GG.
+        </p>
+        <p className="mt-6 text-xl italic text-gray-100">
+          ~ Izhaan 🤍
+        </p>
       </div>
     </div>
   );
 }
-
 export default function Home() {
   // We now get the 'loading' state from our authentication context.
   const { user, loading } = useAuth();

@@ -15,9 +15,17 @@ function InstallPrompt() {
   return (
     <div className="min-h-screen flex items-center justify-center text-white font-nunito p-8">
       <div className="text-center max-w-md glass-outer p-8">
-        <h1 className="text-4xl font-bold mb-4">LoL too late, Its ded bro 🥀🥀🥀.</h1>
+        <h1 className="text-4xl font-bold mb-4">Auto Generated message due to server error and lack of maintainance.</h1>
         <p className="text-lg text-gray-300 mb-6">
-          Good Night
+          Peak User per day: 83
+          Recurring usser: 12
+          total uptime: 79hrs 15min
+          
+          Thank you for using/caring about this project.
+          Good Night. GG.
+          Successfull projects graveyard count: 11
+
+          ~Izhaan 🤍🤍
         </p>
         <div className="text-left space-y-4">
           

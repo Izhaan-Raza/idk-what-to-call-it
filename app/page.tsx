@@ -19,10 +19,10 @@ function InstallPrompt() {
       <div className="w-full max-w-md glass-outer rounded-xl shadow-lg p-8 text-center">
         
         <h1 className="text-2xl font-bold mb-2">
-          A Message from the Developer
+          Auto Generated Message
         </h1>
         <p className="text-red-400 mb-6">
-          This service is offline due to a server error and lack of maintenance.
+          This service is offline due to a server overload and lack of maintenance(developer so gaya).
         </p>
 
         {/* Statistics list, visually separated */}

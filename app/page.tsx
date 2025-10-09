@@ -18,6 +18,8 @@ function InstallPrompt() {
         <h1 className="text-4xl font-bold mb-4">Auto Generated message due to server error and lack of maintainance.</h1>
         <p className="text-lg text-gray-300 mb-6">
           Peak User per day: 83
+          <br>
+          </br>
           Recurring usser: 12
           total uptime: 79hrs 15min
           

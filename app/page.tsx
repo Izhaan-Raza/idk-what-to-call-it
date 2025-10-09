@@ -15,13 +15,12 @@ function InstallPrompt() {
   return (
     <div className="min-h-screen flex items-center justify-center text-white font-nunito p-8">
       <div className="text-center max-w-md glass-outer p-8">
-        <h1 className="text-4xl font-bold mb-4">Heyylooooooo (please dont judge made this app in like (10:43:12) hrs)</h1>
+        <h1 className="text-4xl font-bold mb-4">LoL too late, Its ded bro 🥀🥀🥀.</h1>
         <p className="text-lg text-gray-300 mb-6">
-          To install this app add it to home screen.  
+          Good Night
         </p>
         <div className="text-left space-y-4">
-          <p><strong>On iOS:</strong> Tap the "Share" icon, then scroll down and select "Add to Home Screen".</p>
-          <p><strong>On Android:</strong> Tap the menu icon and select "Install app" or "Add to Home Screen".</p>
+          
         </div>
       </div>
     </div>

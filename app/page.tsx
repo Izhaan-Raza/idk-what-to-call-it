@@ -19,30 +19,22 @@ function InstallPrompt() {
       <div className="w-full max-w-md glass-outer rounded-xl shadow-lg p-8 text-center">
         
         <h1 className="text-2xl font-bold mb-2">
-          Auto Generated Message
+          Service Restored!
         </h1>
-        <p className="text-red-400 mb-6">
-          This service is offline due to a server overload and lack of maintenance(developer so gaya).
+        <p className="text-green-400 mb-6">
+          This service is back up. LOL, fixed it.
         </p>
 
-        {/* Statistics list, visually separated */}
-        <div className="border-t border-gray-700 pt-6 mt-6">
-          <ul className="space-y-3 text-left">
-            <li className="flex justify-between items-center text-gray-300">
-              <span>Peak Daily Users</span>
-              <span className="font-semibold text-lg text-white">83</span>
+        {/* Instructions to add to home screen */}
+        <div className="border-t border-gray-700 pt-6 mt-6 text-left">
+          <h2 className="text-lg font-semibold text-center mb-4">Get the Full Experience</h2>
+          <p className="text-center text-gray-300 mb-4">For the best experience, add this app to your home screen.</p>
+          <ul className="space-y-3">
+            <li className="text-gray-300">
+              <strong className="font-semibold text-white">On iOS:</strong> Tap the Share icon in Safari, scroll down, and select 'Add to Home Screen'.
             </li>
-            <li className="flex justify-between items-center text-gray-300">
-              <span>Recurring Users</span>
-              <span className="font-semibold text-lg text-white">12</span>
-            </li>
-            <li className="flex justify-between items-center text-gray-300">
-              <span>Total Uptime</span>
-              <span className="font-semibold text-lg text-white">79h 15m</span>
-            </li>
-            <li className="flex justify-between items-center text-gray-300">
-              <span>Successful Projects Graveyard</span>
-              <span className="font-semibold text-lg text-white">11</span>
+            <li className="text-gray-300">
+              <strong className="font-semibold text-white">On Android:</strong> Tap the three-dot menu in your browser and select 'Install app' or 'Add to Home Screen'.
             </li>
           </ul>
         </div>
@@ -52,7 +44,7 @@ function InstallPrompt() {
           Thank you for using and caring about this project.
         </p>
         <p className="text-gray-400 text-sm mt-1">
-          Good Night. GG.
+          GG.
         </p>
         <p className="mt-6 text-xl italic text-gray-100">
           ~ Izhaan 🤍
@@ -61,6 +53,7 @@ function InstallPrompt() {
     </div>
   );
 }
+
 export default function Home() {
   // We now get the 'loading' state from our authentication context.
   const { user, loading } = useAuth();
